@@ -1,0 +1,30 @@
+.gradient1 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.48),
+      rgba(108, 108, 108, 0.48)
+    ),
+    url(./Assets/Ukraine.jpg);
+  height: 575px;
+  background-size: cover;
+}
+.gradient2 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.48),
+      rgba(108, 108, 108, 0.48)
+    ),
+    url(./Assets/Azerbaijan.jpg);
+  height: 575px;
+  background-size: cover;
+}
+.gradient3 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(108, 108, 108, 0.48),
+      rgba(108, 108, 108, 0.48)
+    ),
+    url(./Assets/Turkey.jpg);
+  height: 575px;
+  background-size: cover;
+}

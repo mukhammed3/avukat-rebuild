@@ -1,0 +1,39 @@
+.nav {
+  font-family: var(--poppins);
+}
+.fixedHead {
+  display: flex;
+  height: 30px;
+  max-width: 1440px;
+  background-color: #4d6685;
+}
+.iconParent {
+  display: flex;
+  align-items: center;
+  margin-left: 25px;
+}
+.iconParent > a {
+  margin-left: 10px;
+  color: white;
+
+  font-family: var(--roboto);
+  font-weight: 300;
+}
+.iconParent:nth-child(2) {
+  margin-left: 25px;
+}
+.iconParent:nth-child(4) {
+  margin-left: 10px;
+}
+.iconParent:nth-child(5) {
+  margin-left: 10px;
+  margin-bottom: 2px;
+}
+.container {
+  background-color: #4d6685;
+}
+.underHead {
+  max-width: 1440px;
+  height: 2px;
+  background-color: white;
+}

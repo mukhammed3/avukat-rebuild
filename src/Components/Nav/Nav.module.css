@@ -1,0 +1,28 @@
+.nav {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  max-width: 1440px;
+  height: 90px;
+
+  background-color: #4d6685;
+}
+.container {
+  background-color: #4d6685;
+  display: flex;
+  justify-content: center;
+}
+.navFont {
+  margin-right: 60px;
+  font-family: var(--roboto);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 23px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+.navFont:last-child {
+  margin-right: 0;
+}
