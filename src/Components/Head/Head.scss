@@ -3,6 +3,7 @@
 }
 .fixedHead {
   display: flex;
+  margin: 0 auto;
   height: 30px;
   max-width: 1440px;
   background-color: #4d6685;
@@ -29,7 +30,7 @@
   margin-left: 10px;
   margin-bottom: 2px;
 }
-.container {
+.containerHeader {
   background-color: #4d6685;
 }
 .underHead {

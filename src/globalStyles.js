@@ -15,8 +15,19 @@ export const GlobalStyles = createGlobalStyle`
 }
 html, body {
     background-color: #EFEFEF;
+    height: 100%;
 }
 a {
 text-decoration: none;
+}
+div,p,h1,h2,h3,h4,h5,h6,span {
+    margin: 0;
+    padding: 0;
+}
+a:hover {
+    color: inherit;
+}
+a {
+    color: inherit;
 }
 `;
