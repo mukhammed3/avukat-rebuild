@@ -1,0 +1,109 @@
+.sectionFive {
+  height: 630px;
+}
+.mapKyiv {
+  width: 100%;
+  height: 350px;
+}
+.frameBox {
+  position: relative;
+
+  &__in {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 50px;
+    background-color: #4d6685;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.textInFrame {
+  font-family: var(--playfair);
+  font-size: 15px;
+  color: white;
+}
+.lineInFrame {
+  margin-top: 5px;
+  width: 10%;
+  height: 1px;
+  background-color: #d9d9d9;
+}
+
+.mapButtons {
+  display: flex;
+  justify-content: center;
+  margin-top: -6px;
+  & > button {
+    outline: none;
+    border: none;
+    width: 100%;
+    height: 343px;
+  }
+}
+.activeBtn {
+  border-top: 10px solid #4d6685 !important;
+  transition: var(--trans);
+}
+//inBtn
+.inBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+
+  height: 100%;
+
+  &__city {
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 35px;
+
+    color: #4d6685;
+  }
+
+  &__line {
+    margin-top: 20px;
+
+    width: 50px;
+    height: 5px;
+
+    background: #d9d9d9;
+  }
+
+  &__address {
+    margin-top: 10px;
+
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #4d6685;
+  }
+
+  &__phone {
+    margin-top: 15px;
+
+    font-family: var(--poppins);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 35px;
+
+    color: #4d6685;
+  }
+}
+.btwMap {
+  width: 5px;
+  height: 350px;
+  background-color: #d9d9d9;
+}
+//mail

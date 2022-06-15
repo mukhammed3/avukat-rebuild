@@ -12,6 +12,8 @@ export const GlobalStyles = createGlobalStyle`
     --playfair: 'Playfair Display', serif;
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
+    --trans: all 0.2s ease-in-out;
+
 }
 html, body {
     background-color: #EFEFEF;

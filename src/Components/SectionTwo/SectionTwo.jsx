@@ -1,5 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 //svg
 import { ReactComponent as IconTime } from "./Svg/time.svg";
@@ -8,11 +11,12 @@ import { ReactComponent as IconChat } from "./Svg/chat.svg";
 import { ReactComponent as IconSecurity } from "./Svg/security.svg";
 
 import { ReactComponent as IconArrow } from "./Svg/arrowBtn.svg";
-// import { ReactComponent as IconScales } from "./Svg/scales.svg";
 
 import welcomeImg from "./Assets/welcomeLeft.jpg";
 
 function SectionTwo() {
+  const [selectedId, setSelectedId] = useState(null);
+
   return (
     <section className="sectionTwo ">
       <div className="main-boxes main-container">

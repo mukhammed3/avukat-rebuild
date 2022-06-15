@@ -7,6 +7,9 @@
   height: 30px;
   max-width: 1440px;
   background-color: #4d6685;
+
+  max-width: 3000px;
+  margin: 0 auto;
 }
 .iconParent {
   display: flex;
@@ -30,9 +33,9 @@
   margin-left: 10px;
   margin-bottom: 2px;
 }
-.containerHeader {
-  background-color: #4d6685;
-}
+// .containerHeader {
+//   background-color: #4d6685;
+// }
 .underHead {
   max-width: 1440px;
   height: 2px;
