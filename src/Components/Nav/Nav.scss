@@ -5,10 +5,10 @@
   max-width: 1440px;
   height: 90px;
 
-  background-color: #4d6685;
+  background-color: var(--color);
 }
 .containerNav {
-  background-color: #4d6685;
+  background-color: var(--color);
   display: flex;
   justify-content: center;
 

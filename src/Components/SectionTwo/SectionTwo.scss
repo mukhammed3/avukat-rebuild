@@ -17,7 +17,11 @@
   z-index: 5;
 
   &__item {
-    border-radius: 15px;
+    // border-radius: 15px;
+    border: 1px solid #80808054;
+    border-bottom: 5px double #1c6ea4;
+    border-radius: 0px 0px 24px 0px;
+    cursor: pointer;
     box-shadow: 10px 10px rgb(180 180 180 / 8%);
 
     display: flex;
@@ -31,6 +35,11 @@
 
     margin-top: 60px;
     margin-right: 60px;
+
+    transition: var(--trans);
+  }
+  &__item:hover {
+    transform: scale(1.05);
   }
   &__item:nth-child(even) {
     margin-right: 0;

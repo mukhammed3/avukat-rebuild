@@ -13,6 +13,7 @@ export const GlobalStyles = createGlobalStyle`
     --poppins: 'Poppins', sans-serif;
     --roboto: 'Roboto', sans-serif;
     --trans: all 0.2s ease-in-out;
+    --color: #3e619b;
 
 }
 html, body {

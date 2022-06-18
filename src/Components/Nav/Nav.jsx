@@ -5,13 +5,23 @@ import RoutesComponent from "../RoutesComponent";
 //svg
 import { ReactComponent as IconLogo } from "./Svg/Logo.svg";
 
+//trans
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
+
 function Nav() {
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
   return (
     <>
       <div className="containerNav">
         <nav className="nav">
           <Link className="navFont" to="/">
-            ANA SAYFA
+            {/* {t("descr.part1")} */}
+            <Trans i18nKey="descr.part1">ГОЛОВНА</Trans>
           </Link>
           <Link className="navFont" to="/hakkimizda">
             HAKKIMIZDA

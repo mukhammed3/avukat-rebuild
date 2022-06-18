@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
-import { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
@@ -14,7 +16,24 @@ import { ReactComponent as IconArrow } from "./Svg/arrowBtn.svg";
 
 import welcomeImg from "./Assets/welcomeLeft.jpg";
 
+//trans
+import { useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
+
 function SectionTwo() {
+  //trans
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
+
+  //anim
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   const [selectedId, setSelectedId] = useState(null);
 
   return (
@@ -34,7 +53,7 @@ function SectionTwo() {
               </p>
             </div>
           </div>
-          <div className="inBoxLine"></div>
+          <div className="inBoxLine" data-aos="fade-right"></div>
         </div>
         <div className="main-boxes__item">
           <div className="inBox">
@@ -49,14 +68,14 @@ function SectionTwo() {
               </p>
             </div>
           </div>
-          <div className="inBoxLine"></div>
+          <div className="inBoxLine" data-aos="fade-left"></div>
         </div>
         <div className="main-boxes__item">
           <div className="inBox">
             <div className="inBoxLeft">
               <IconChat />
             </div>
-            <div className="inBoxRight">
+            <div className="inBoxRight" data-aos="fade-right">
               <h3 lang="tr">YAKLAŞIM</h3>
               <p lang="tr">
                 Her türlü hukuki sorun, değerine bakılmaksızın ve müvekkil
@@ -64,14 +83,14 @@ function SectionTwo() {
               </p>
             </div>
           </div>
-          <div className="inBoxLine"></div>
+          <div className="inBoxLine" data-aos="fade-right"></div>
         </div>
         <div className="main-boxes__item">
           <div className="inBox">
             <div className="inBoxLeft">
               <IconSecurity />
             </div>
-            <div className="inBoxRight">
+            <div className="inBoxRight" data-aos="fade-left">
               <h3 lang="tr">STRATEJİ</h3>
               <p lang="tr">
                 Doğru yaklaşımla belirlenen hedefe ulaşmak için hızlı ve
@@ -79,7 +98,7 @@ function SectionTwo() {
               </p>
             </div>
           </div>
-          <div className="inBoxLine"></div>
+          <div className="inBoxLine" data-aos="fade-left"></div>
         </div>
       </div>
       <div className="main-container">
@@ -87,7 +106,7 @@ function SectionTwo() {
           <div className="main-welcome__item">
             <img src={welcomeImg} alt="Law Company" />
           </div>
-          <div className="main-welcome__item">
+          <div className="main-welcome__item" data-aos="fade-down-left">
             <h3 lang="tr">A&A HUKUK BÜROSUNA HOŞ GELDİNİZ</h3>
             <div className="welcomeLine"></div>
             <p lang="tr">

@@ -3,13 +3,28 @@
 }
 .fixedHead {
   display: flex;
+  justify-content: space-between;
   margin: 0 auto;
   height: 30px;
   max-width: 1440px;
-  background-color: #4d6685;
+  background-color: var(--color);
 
   max-width: 3000px;
   margin: 0 auto;
+
+  padding-left: 70px;
+  padding-right: 70px;
+
+  &__left {
+    display: flex;
+  }
+  &__right > button {
+    border: none;
+    background: transparent;
+  }
+  &__right > button:first-child {
+    margin-right: 20px;
+  }
 }
 .iconParent {
   display: flex;
@@ -33,11 +48,10 @@
   margin-left: 10px;
   margin-bottom: 2px;
 }
-// .containerHeader {
-//   background-color: #4d6685;
-// }
+
 .underHead {
-  max-width: 1440px;
-  height: 2px;
+  max-width: 3000px;
+  margin: 0 auto;
+  height: 1px;
   background-color: white;
 }

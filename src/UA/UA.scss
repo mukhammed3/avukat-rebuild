@@ -1,0 +1,24 @@
+.colorsUkraine {
+  max-width: 3000px;
+  margin: 0 auto;
+  height: 40px;
+
+  &__blue {
+    background-color: #005bbb;
+    height: 20px;
+    width: 100%;
+
+    & > span {
+      color: #fff;
+      display: block;
+      font-family: var(--poppins);
+      text-align: center;
+    }
+  }
+
+  &__yellow {
+    background-color: #ffd500;
+    height: 20px;
+    width: 100%;
+  }
+}
